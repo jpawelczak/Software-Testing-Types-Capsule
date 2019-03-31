@@ -1,0 +1,10 @@
+endpoints {
+
+  action-endpoints {
+    action-endpoint (TestingTypeAction) {
+      accepted-inputs (testingTypeName)
+      local-endpoint (TestingType.js)
+    }
+  }
+  
+}

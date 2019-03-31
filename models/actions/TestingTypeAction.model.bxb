@@ -1,0 +1,11 @@
+action (TestingTypeAction) {
+  description (Provide an overview of searched testing type)
+  type (Search)
+  collect {
+    input (testingTypeName) {
+      type (TestingTypeName)
+      min (Required) max (One)
+    }
+  }
+  output (TestOverview)
+}
