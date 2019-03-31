@@ -1,5 +1,5 @@
 action (TestingTypeAction) {
-  description (Provide an overview of searched testing type)
+  description (Provide an overview of software testing type)
   type (Search)
   collect {
     input (testingTypeName) {
@@ -7,5 +7,5 @@ action (TestingTypeAction) {
       min (Required) max (One)
     }
   }
-  output (TestOverview)
+  output (TestingOverviewResult)
 }

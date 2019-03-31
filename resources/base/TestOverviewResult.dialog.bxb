@@ -1,4 +1,0 @@
-dialog (Result) {
-  match: TestingTypeName (this)
-  template ("here it is ...")
-}

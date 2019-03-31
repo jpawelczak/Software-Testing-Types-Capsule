@@ -1,5 +1,6 @@
 module.exports.function = function testingType (testingTypeName) {
+  
   return {
-    TestOverview: "Ala ma kota"
+    testOverview: "Random text to check if it works"
   }
 }
