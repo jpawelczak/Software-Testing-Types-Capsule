@@ -1,0 +1,20 @@
+result-view {
+  match: TestingOverviewResult (this)
+  
+  //message ("Here is an overview:")
+
+  render {
+     layout {
+       section {
+         content {
+           single-line {
+             text {
+               style (Detail_M)
+               value ("#{value(this.testingOverview)}")
+             }
+           }
+         }
+       }
+     }
+   }
+}

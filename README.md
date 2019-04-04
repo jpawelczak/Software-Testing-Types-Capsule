@@ -1,1 +1,1 @@
-Testing Type Capsule
+Software Testing Type Capsule

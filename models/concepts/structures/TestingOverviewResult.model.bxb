@@ -1,5 +1,9 @@
 structure (TestingOverviewResult) {
   description (Result of search: an overview of the software testing type)
+  property (testingTypeName) {
+    type (TestingTypeName)
+    min (Required) max (One)
+  }
   property (testingOverview) {
     type (TestingOverview)
     min (Required) max (One)
