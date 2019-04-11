@@ -1,5 +1,7 @@
 result-view {
-  match: TestingOverviewResult (this)
+  match: TestingOverviewResult (this) {
+    min (Required) max (One)
+  }
   
   //message ("Here is an overview:")
 
@@ -7,14 +9,17 @@ result-view {
      layout {
        section {
          content {
-           single-line {
-             text {
-               style (Detail_M)
-               value ("#{value(this.testingOverview)}")
-             }
+          paragraph {
+            value ("#{value(this.testingOverview)}")
+            style (Detail_M)
            }
          }
        }
      }
    }
+  conversation-drivers {
+    conversation-driver {
+      template ("test")
+    }
+  }
 }

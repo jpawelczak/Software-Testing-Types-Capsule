@@ -1,6 +1,6 @@
 action (TestingTypeAction) {
-  description (Provide an overview of software testing type)
   type (Search)
+  description (Provide an overview of software testing type)
   collect {
     input (testingTypeName) {
       type (TestingTypeName)
