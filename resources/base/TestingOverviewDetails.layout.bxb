@@ -1,0 +1,29 @@
+layout-macro-def (testing-details) {
+  params {
+    param (testingOverviewResult) {
+      type (TestingOverviewResult)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+      content {
+        
+        title-area {
+          halign (Start)
+          slot1 {
+            text {
+              value ("#{value(testingOverviewResult.testingTypeName)}")
+              style (Title_L)
+            }
+          }
+        }
+        paragraph {
+          value ("#{value(testingOverviewResult.testingOverview)}")
+          style (Detail_M)
+        }
+
+      }
+    }
+  }
+}

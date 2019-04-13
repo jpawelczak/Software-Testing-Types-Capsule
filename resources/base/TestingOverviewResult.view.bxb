@@ -1,25 +1,18 @@
 result-view {
-  match: TestingOverviewResult (this) {
-    min (Required) max (One)
-  }
+  match: TestingOverviewResult (this)
   
-  //message ("Here is an overview:")
-
   render {
-     layout {
-       section {
-         content {
-          paragraph {
-            value ("#{value(this.testingOverview)}")
-            style (Detail_M)
-           }
-         }
-       }
-     }
-   }
-  conversation-drivers {
-    conversation-driver {
-      template ("test")
+      layout-macro (testing-details) {
+        param (testingOverviewResult) {
+          expression (this)
+        }
+      }   
+  }
+
+   conversation-drivers {
+     conversation-driver {
+       template ("More on Wikipedia")
+      
     }
   }
 }
