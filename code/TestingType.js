@@ -8,8 +8,24 @@ module.exports.function = function testingType (testingTypeName) {
   
   //testing object downloaded from wikipedia API - link below
   //the API mocked in TestingOverviews.js
-  console.log(text.query.pages[222828].extract)
-  var testingOverview = text.query.pages[222828].extract;
+  
+  if(testingTypeName == "Unit testing") {
+    //console.log(text.query.pages[222828].extract)
+    var testingOverview = text.query.pages[222828].extract;
+  
+  }
+  
+  if(testingTypeName == "Integration testing") {
+    var testingOverview = text.query.pages[355711].extract;
+  }
+  
+  if(testingTypeName == "System testing") {
+    var testingOverview = text.query.pages[864021].extract;
+  }
+  
+  if(testingTypeName == "Operational acceptance testing") {
+    var testingOverview = text.query.pages[29343018].extract;
+  }
   
   //API works, but dont know how to call parameter of the object
   var response = http.getUrl('https://en.wikipedia.org/w/api.php?format=jsonfm&action=query&prop=extracts&exintro=&explaintext=&titles=Unit%20testing');
