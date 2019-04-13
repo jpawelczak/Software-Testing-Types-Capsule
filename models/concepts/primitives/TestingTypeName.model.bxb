@@ -3,5 +3,5 @@ enum (TestingTypeName) {
   symbol (Unit testing)
   symbol (Integration testing)
   symbol (System testing)
-  symbol (Operational acceptnce testing)
+  symbol (Operational acceptance testing)
 }

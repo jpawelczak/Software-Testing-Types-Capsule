@@ -10,9 +10,24 @@ result-view {
   }
 
    conversation-drivers {
-     conversation-driver {
-       template ("More on Wikipedia")
-      
+    switch (this.testingTypeName) {
+      // each case is different depending on 
+      // the currently selected shirt
+      case (Unit testing) {
+        conversation-driver {
+          template ("how about integration testing?")
+        }     
+      }
+      case (Integration testing) {
+        conversation-driver {
+          template ("how about system testing?")
+        }              
+      }
+      case (System testing) {
+        conversation-driver {
+          template ("how about operational acceptance testing?")
+        }                       
+      }
     }
   }
 }
