@@ -11,8 +11,6 @@ result-view {
 
    conversation-drivers {
     switch (this.testingTypeName) {
-      // each case is different depending on 
-      // the currently selected shirt
       case (Unit testing) {
         conversation-driver {
           template ("how about integration testing?")

@@ -1,35 +1,32 @@
 var console = require("console")
 var http = require('http')
-var config = require('config')
-var fail = require('fail')
-var text = require('./lib/TestingOverviews.js')
+//var config = require('config')
+//var text = require('./lib/TestingOverviews.js')
 
 module.exports.function = function testingType (testingTypeName) {
   
-  //testing object downloaded from wikipedia API - link below
-  //the API mocked in TestingOverviews.js
+  //integration with Wikipedia API
   
-  if(testingTypeName == "Unit testing") {
-    //console.log(text.query.pages[222828].extract)
-    var testingOverview = text.query.pages[222828].extract;
-  
+  if (testingTypeName == "Unit testing") {
+     var type = "Unit%20testing"
+     
+  } else if (testingTypeName == "Integration testing") {
+     var type = "Integration%20testing"    
+     
+  } else if (testingTypeName == "System testing") {
+     var type = "System%20testing" 
+     
+  } else {
+     var type = "Operational%20acceptance%20testing"
   }
+    
+  var response = http.getUrl('https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=' + type);
   
-  if(testingTypeName == "Integration testing") {
-    var testingOverview = text.query.pages[355711].extract;
+  var obj = JSON.parse(response)
+  for(var key in obj.query.pages) {
+    var testingOverview = obj.query.pages[key].extract
+    console.log(testingOverview);
   }
-  
-  if(testingTypeName == "System testing") {
-    var testingOverview = text.query.pages[864021].extract;
-  }
-  
-  if(testingTypeName == "Operational acceptance testing") {
-    var testingOverview = text.query.pages[29343018].extract;
-  }
-  
-  //API works, but dont know how to call parameter of the object
-  var response = http.getUrl('https://en.wikipedia.org/w/api.php?format=jsonfm&action=query&prop=extracts&exintro=&explaintext=&titles=Unit%20testing');
-  console.log(response.batchcomplete);
   
   return {
     testingTypeName: testingTypeName,
