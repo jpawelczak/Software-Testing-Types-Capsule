@@ -1,0 +1,36 @@
+result-view {
+  match: TestingOverviewResult (this)
+  
+  render {
+      layout-macro (testing-details) {
+        param (testingOverviewResult) {
+          expression (this)
+        }
+      }   
+  }
+
+   conversation-drivers {
+    switch (this.testingTypeName) {
+      case (Unit testing) {
+        conversation-driver {
+          template ("Was ist Integrationstest")
+        }     
+      }
+      case (Integration testing) {
+        conversation-driver {
+          template ("Was ist Modultest")
+        }              
+      }
+      case (System testing) {
+        conversation-driver {
+          template ("Was ist Systemprüfung")
+        }                       
+      }
+      case (Operational acceptance testing) {
+        conversation-driver {
+          template ("Was ist Abnahmeprüfungen")
+        }     
+      }
+    }
+  }
+}

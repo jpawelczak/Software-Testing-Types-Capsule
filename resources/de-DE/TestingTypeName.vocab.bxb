@@ -1,0 +1,6 @@
+vocab (TestingTypeName) {
+  "Unit testing" {"Unit testing" "Modultest" "Komponententest"}
+  "Integration testing" {"Integration testing" "Integrationstest"}
+  "System testing" {"System testing" "Systemprüfung"}
+  "Operational acceptance testing" {"Operational acceptance testing" "Abnahmeprüfungen"}
+}

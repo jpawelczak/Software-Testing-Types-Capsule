@@ -2,7 +2,7 @@ endpoints {
 
   action-endpoints {
     action-endpoint (TestingTypeAction) {
-      accepted-inputs (testingTypeName)
+      accepted-inputs (testingTypeName, $vivContext)
       local-endpoint (TestingType.js)
     }
   }

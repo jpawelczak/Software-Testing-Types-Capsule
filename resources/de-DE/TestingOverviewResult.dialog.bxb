@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: TestingOverviewResult (this)
+  template("Hier haben Sie einen Überblick über #{value(this.testingTypeName)}")
+}
