@@ -13,7 +13,7 @@ layout-macro-def (testing-details) {
           halign (Start)
           slot1 {
             text {
-              value ("#{value(testingOverviewResult.testingTypeName)}")
+              value ("#{value(testingOverviewResult.name)}")
               style (Title_L)
             }
           }

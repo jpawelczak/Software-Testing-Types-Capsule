@@ -4,6 +4,10 @@ structure (TestingOverviewResult) {
     type (TestingTypeName)
     min (Required) max (One)
   }
+  property (name) {
+    type (Name)
+    min (Required) max (One)
+  }
   property (testingOverview) {
     type (TestingOverview)
     min (Required) max (One)

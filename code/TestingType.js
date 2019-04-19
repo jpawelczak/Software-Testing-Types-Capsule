@@ -25,6 +25,7 @@ module.exports.function = function testingType (testingTypeName, $vivContext) {
        var type = "Integration%20testing"
      } else {
        var type = "Integrationstest";
+       console.log("type: " + type);
      }
      
   } else if (testingTypeName == "System testing") {
@@ -50,15 +51,15 @@ module.exports.function = function testingType (testingTypeName, $vivContext) {
   var obj = JSON.parse(response)
   for(var key in obj.query.pages) {
     var testingOverview = obj.query.pages[key].extract
-    //var testingTypeName = obj.query.pages[key].title
-    console.log(testingOverview);
-    //console.log(testingTypeName);
+    var name = obj.query.pages[key].title
+    //console.log(testingOverview);
+    //console.log(obj);
+    console.log("name: " + name);
   }
   
-  console.log(obj.query.pages[key].title)
-
   return {
     testingTypeName: testingTypeName,
+    name: name,
     testingOverview: testingOverview
   }
 }
