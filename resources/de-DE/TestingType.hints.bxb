@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    utterance (zeige mir Integrationstest)
+    utterance (was ist Integrationstest)
+    utterance (was ist Komponententest)
+  }
+}

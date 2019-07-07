@@ -50,8 +50,8 @@ module.exports.function = function testingType (testingTypeName, $vivContext) {
   for(var key in obj.query.pages) {
     var testingOverview = obj.query.pages[key].extract;
     var name = obj.query.pages[key].title;
-    //console.log(testingOverview);
-    //console.log(obj);
+    console.log(testingOverview);
+    console.log(obj);
     //console.log("name: " + name);
   }
   
