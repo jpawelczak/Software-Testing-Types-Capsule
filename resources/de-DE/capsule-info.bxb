@@ -2,7 +2,7 @@ capsule-info {
   display-name (Softwaretest Guru)
   description ("Erfahren Sie mehr über Softwaretests")
   developer-name (NJQ)
-  icon-asset (/assets/icons/settings-button.png)
+  icon-asset ("../assets/icons/settings-button.png")
   dispatch-name (Softwaretest Guru)
   search-keywords {
     keyword (Softwaretest)

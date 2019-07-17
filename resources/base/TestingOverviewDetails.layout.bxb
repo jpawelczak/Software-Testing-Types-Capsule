@@ -22,6 +22,12 @@ layout-macro-def (testing-details) {
           value ("#{value(testingOverviewResult.testingOverview)}")
           style (Detail_M)
         }
+        attribution-link {
+            label {
+                template ("More on BixbyDevelopers.com")
+            }
+            url ("https://bixbydevelopers.com")
+        }
 
       }
     }

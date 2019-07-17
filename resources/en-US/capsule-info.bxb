@@ -2,7 +2,7 @@ capsule-info {
   display-name (Software Testing Guru)
   description ("Learn more about types of software testing")
   developer-name (NJQ)
-  icon-asset (/assets/icons/settings-button.png)
+  icon-asset ("../assets/icons/settings-button.png")
   dispatch-name (Software Testing Guru)
   search-keywords {
     keyword (software testing)
