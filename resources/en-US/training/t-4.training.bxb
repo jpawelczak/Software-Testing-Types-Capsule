@@ -1,0 +1,5 @@
+train (t-4f01ygxb41be678w4pj56sjwr) {
+  utterance ("[g:ScheduledTestResult] schedule (unit testing)[v:TestingTypeName:'Unit testing'] for (tomorrow)[v:viv.time.DateTimeExpression]")
+  plan (Y2BhMMzLKowvKMos0yvOTyspTyxKDUktLsnMSw+pLEgt1gtOzkhNKc1JTQGJBqUWl+aUMOgSpwUqSEg5EscvMTeVQboMqLIkMzdVzyWxJDUEyHCtKChKLS7OzM9jYGZgZGACkgxAGgQhAMQHiwIA)
+  last-modified (1563397463238)
+}

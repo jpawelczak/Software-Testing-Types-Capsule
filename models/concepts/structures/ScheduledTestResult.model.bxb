@@ -1,0 +1,11 @@
+structure (ScheduledTestResult) {
+  description (summary of scheduled test)
+  property (testingTypeName) {
+    type(TestingTypeName)
+    min (Required) max (One)
+  }
+  property (relevantDateTime) {
+    type (time.DateTimeExpression)
+    description (The item is relevant whenever the relevantDateTime is in the past but item.dateInterval.start is in the future.)
+  }
+}

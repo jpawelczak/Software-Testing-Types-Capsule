@@ -1,0 +1,4 @@
+structure (Date) {
+  description (Date of the test)
+  role-of (time.DateTimeExpression)
+}

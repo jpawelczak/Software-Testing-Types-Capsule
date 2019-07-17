@@ -5,6 +5,10 @@ endpoints {
       accepted-inputs (testingTypeName, $vivContext)
       local-endpoint (TestingType.js)
     }
+    action-endpoint (ScheduleTesting) {
+      accepted-inputs (testingTypeName, relevantDateTime)
+      local-endpoint (ScheduleTesting.js)
+    }
   }
   
 }

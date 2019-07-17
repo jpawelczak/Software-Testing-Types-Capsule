@@ -1,0 +1,15 @@
+action (ScheduleTesting) {
+  description (Schedule testing of your software)
+  type (Search)
+  collect {
+    input (testingTypeName) {
+      type (TestingTypeName)
+      min (Required) max (One)
+    }
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      //to-do: add default-init
+    }
+  }
+  output (ScheduledTestResult)
+}

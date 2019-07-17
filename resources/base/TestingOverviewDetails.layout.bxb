@@ -18,15 +18,16 @@ layout-macro-def (testing-details) {
             }
           }
         }
+        
         paragraph {
           value ("#{value(testingOverviewResult.testingOverview)}")
           style (Detail_M)
         }
         attribution-link {
             label {
-                template ("More on BixbyDevelopers.com")
+                template ("More on Wikipedia")
             }
-            url ("https://bixbydevelopers.com")
+            url ("#{value(testingOverviewResult.link)}")
         }
 
       }

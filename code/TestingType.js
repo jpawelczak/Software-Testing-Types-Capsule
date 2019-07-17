@@ -46,6 +46,8 @@ module.exports.function = function testingType (testingTypeName, $vivContext) {
     
   var response = http.getUrl('https://' + language + '.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=' + type);
   
+  var link = 'https://' + language + '.wikipedia.org/wiki/' + type;
+  
   var obj = JSON.parse(response);
   for(var key in obj.query.pages) {
     var testingOverview = obj.query.pages[key].extract;
@@ -58,6 +60,7 @@ module.exports.function = function testingType (testingTypeName, $vivContext) {
   return {
     testingTypeName: testingTypeName,
     name: name,
-    testingOverview: testingOverview
+    testingOverview: testingOverview,
+    link: link
   };
 };

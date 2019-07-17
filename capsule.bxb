@@ -6,6 +6,11 @@ capsule {
     target (bixby-mobile-en-US)
     target (bixby-mobile-de-DE)
   }
+  capsule-imports {
+    import (viv.time) {
+      as (time) version (2.88.10)     
+    }
+  }
   runtime-flags {
     concepts-inherit-super-type-features
     modern-prompt-rejection

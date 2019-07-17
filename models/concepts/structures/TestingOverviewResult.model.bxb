@@ -12,4 +12,8 @@ structure (TestingOverviewResult) {
     type (TestingOverview)
     min (Required) max (One)
   }
+  property (link) {
+    type (Link)
+    min (Required) max (One)
+  }
 }
